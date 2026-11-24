@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OUTAN BRO | Web Design & Digital Services</title>
+  <meta name="description" content="OUTAN BRO - Professional websites and digital services for your business.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #070d19;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b1425;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #172a43;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #00d9ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #00d9ff;
+    }
+
+    .hero {
+      min-height: 85vh;
+      padding: 100px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(135deg, #07101f, #102b46);
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      line-height: 1.15;
+      max-width: 750px;
+    }
+
+    .hero h1 span {
+      color: #00d9ff;
+    }
+
+    .hero p {
+      color: #b9c9dc;
+      max-width: 600px;
+      margin: 22px 0;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00c8ed;
+      color: #06101d;
+      padding: 13px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 35px;
+    }
+
+    .section-title span {
+      color: #00d9ff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #101d30;
+      border: 1px solid #203650;
+      padding: 28px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #00d9ff;
+    }
+
+    .card h3 {
+      color: #00d9ff;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #bdc9d8;
+    }
+
+    .about {
+      background: #0b1425;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: auto;
+      color: #bdc9d8;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #00d9ff;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      color: #bdc9d8;
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #0b1425;
+    }
+
+    .contact p {
+      margin: 12px 0;
+      color: #bdc9d8;
+    }
+
+    .contact a {
+      color: #00d9ff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #050a13;
+      color: #8fa3ba;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 75px 7%;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">OUTAN BRO.</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Build Your Digital Future With <span>OUTAN BRO</span></h1>
+  <p>
+    We create modern, professional and responsive websites
+    to help businesses grow online.
+  </p>
+  <a class="btn" href="#contact">Get Started</a>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Our <span>Services</span></h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Website Design</h3>
+      <p>Modern and attractive websites for your business and brand.</p>
+    </div>
+
+    <div class="card">
+      <h3>Responsive Websites</h3>
+      <p>Websites that work smoothly on mobile, tablet and computer.</p>
+    </div>
+
+    <div class="card">
+      <h3>Business Websites</h3>
+      <p>Professional websites to present your services online.</p>
+    </div>
+
+    <div class="card">
+      <h3>Website Development</h3>
+      <p>Clean and organized website development for your ideas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About <span>Us</span></h2>
+  <p>
+    OUTAN BRO is focused on creating modern digital experiences.
+    Our goal is to help individuals and businesses build a strong
+    online presence through professional website design and development.
+  </p>
+</section>
+
+<section id="pricing">
+  <h2 class="section-title">Our <span>Pricing</span></h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Starter</h3>
+      <div class="price">$49</div>
+      <ul>
+        <li>Basic website</li>
+        <li>Responsive design</li>
+        <li>Contact information</li>
+      </ul>
+      <a class="btn" href="#contact">Choose Plan</a>
+    </div>
+
+    <div class="card">
+      <h3>Professional</h3>
+      <div class="price">$129</div>
+      <ul>
+        <li>Professional website</li>
+        <li>Multiple sections</li>
+        <li>Mobile friendly</li>
+      </ul>
+      <a class="btn" href="#contact">Choose Plan</a>
+    </div>
+
+    <div class="card">
+      <h3>Business</h3>
+      <div class="price">$249</div>
+      <ul>
+        <li>Business website</li>
+        <li>Custom design</li>
+        <li>More features</li>
+      </ul>
+      <a class="btn" href="#contact">Choose Plan</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact <span>Us</span></h2>
+  <p>Have a project in mind? Let's work together!</p>
+  <p>Email: <a href="mailto:outanbro@gmail.com">outanbro@gmail.com</a></p>
+  <p>Phone: <a href="tel:+923233648201">+92 323 3648201</a></p>
+  <br>
+  <a class="btn" href="https://wa.me/923233648201">Chat on WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 OUTAN BRO. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
